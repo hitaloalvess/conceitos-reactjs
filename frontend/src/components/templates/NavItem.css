@@ -1,0 +1,28 @@
+.menu-item{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: clamp(2.2rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: #FFF;
+}
+
+.menu-item + .menu-item{
+    margin-left: 5rem;
+}
+
+.menu-item .sublinhar{
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 20px;
+    background-color: royalblue;
+    transition: all .3s ease-in-out;
+}
+
+.menu-item:hover .sublinhar{
+    width: 100%;
+}

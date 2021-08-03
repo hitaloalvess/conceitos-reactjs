@@ -2,5 +2,10 @@ footer.footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+footer.footer i{
+    color: rgb(238, 39, 39);
 }
 

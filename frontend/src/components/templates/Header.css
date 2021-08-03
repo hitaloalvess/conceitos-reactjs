@@ -1,12 +1,16 @@
 header.header{
     display: grid;
     grid-template-columns: 25% 1fr;
-    grid-template-areas: "logo nav";
+    grid-template-areas: "logo menu";
 
     background-color: var(--bg-dark);
     box-shadow: var(--shadow);
 }
 
-header.logo{
+header .logo{
     grid-area: logo;
+}
+
+header .menu{
+    grid-area: menu;
 }

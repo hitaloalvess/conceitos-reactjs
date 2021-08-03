@@ -2,7 +2,6 @@
   --bg-dark: #333;
 
   --header-height:8rem;
-  --aside-width: min(22.5rem, 25%);
   --footer-height: 4rem;
 
   --shadow:0 2px 13px 0 rgba(0, 0, 0, 0.1),
@@ -11,13 +10,12 @@
 
 .app{
   display: grid;
-  grid-template-columns: var(--aside-width) 1fr;
   grid-template-rows: var(--header-height)
                       1fr
                       var(--footer-height);
-  grid-template-areas: "header header"
-                       "menu content"
-                       "footer footer";
+  grid-template-areas: "header"
+                       "content"
+                       "footer";
 
   height: 100vh;
   background-color: #F5F5F5;
@@ -29,9 +27,7 @@ aside.logo{
 header.header{
   grid-area: header;
 }
-aside.menu-area{
-  grid-area: menu;
-}
+
 footer.footer{
   grid-area: footer;
 }
