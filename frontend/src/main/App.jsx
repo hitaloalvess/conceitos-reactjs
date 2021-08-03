@@ -1,14 +1,14 @@
 import './App.css';
 
-import Logo from '../components/templates/Logo';
 import Nav from '../components/templates/Nav';
 import Main from '../components/templates/Main';
 import Footer from '../components/templates/Footer';
+import Header from '../components/templates/Header';
 
 function App() {
   return (
     <div className="app">
-      <Logo />
+      <Header />
       <Nav />
       <Main />
       <Footer />

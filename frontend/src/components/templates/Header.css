@@ -1,0 +1,12 @@
+header.header{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: "logo nav";
+
+    background-color: var(--bg-dark);
+    box-shadow: var(--shadow);
+}
+
+header.logo{
+    grid-area: logo;
+}
