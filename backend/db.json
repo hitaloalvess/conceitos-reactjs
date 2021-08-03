@@ -1,0 +1,12 @@
+{
+    "users":[{
+        "id":1,
+        "name":"Hitalo Rodrigo Alves",
+        "email":"hitalo.ralves@hotmail.com"
+    },
+    {
+        "id":2,
+        "name":"Gabriel Rodrigo Alves",
+        "email":"gabriel.ralves@hotmail.com"
+    }]
+}
