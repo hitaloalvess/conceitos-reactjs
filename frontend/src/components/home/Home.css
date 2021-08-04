@@ -1,0 +1,8 @@
+main .content.home h1{
+    font-size: clamp(3.5rem, 4vw, 7rem);
+    font-weight: 400;
+}
+
+main .content.home hr{
+    margin: 2rem 0 ;
+}

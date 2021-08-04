@@ -2,11 +2,13 @@ import React from 'react';
 
 import './Main.css';
 
-const Main = () => {
+const Main = ({children, tipoContent}) => {
     return ( 
         <>
-           <main className="content">
-               Conteúdo
+           <main className="container">
+                <div className={`content ${tipoContent}`}>
+                    {children}
+                </div>
            </main>
         </> 
     );

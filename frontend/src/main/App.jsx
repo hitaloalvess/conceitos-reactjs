@@ -1,16 +1,19 @@
 import 'font-awesome/css/font-awesome.min.css';
+import {BrowserRouter as Router} from 'react-router-dom'
 
-import Main from '../components/templates/Main';
 import Footer from '../components/templates/Footer';
 import Header from '../components/templates/Header';
+import Routes from '../routes/Routes';
 
 import './App.css';
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Main />
-      <Footer />
+      <Router>
+          <Header />
+          <Routes />
+          <Footer />
+      </Router>
     </div>
   );
 }

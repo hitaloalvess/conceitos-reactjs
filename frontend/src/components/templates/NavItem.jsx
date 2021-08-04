@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 import './NavItem.css';
 const NavItem = ({tipo}) => {
@@ -12,10 +13,10 @@ const NavItem = ({tipo}) => {
 
     return ( 
         <>
-            <a href={`#/${tipo}`} className="menu-item">
-            {primeiraLetraMaiscula(tipo)}
+            <Link to={`/${tipo}`} className="menu-item">
+                {primeiraLetraMaiscula(tipo)}
                 <div className="sublinhar"></div>
-            </a>
+            </Link>
            
         </>
      );
