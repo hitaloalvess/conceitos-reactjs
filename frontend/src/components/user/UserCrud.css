@@ -1,0 +1,64 @@
+/*FORM*/
+.users form{
+    margin-bottom: 3rem;
+}
+
+/*ROW*/
+.users form .row{
+    width: 100%;
+    display: grid;
+}
+
+.users form .row:nth-child(1){
+    grid-template-columns:1fr 1fr;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+.users form .row + .row{
+    margin-top: 2rem;
+}
+
+/*FORM-GROUP*/
+.users form .row .form-group{
+    width: 100%;
+    display: grid;
+}
+
+.users form .row .form-group label{
+    margin-bottom: .5rem;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 400;
+}
+
+.users form .row .form-group input{
+    height: 5vh;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    font-size: clamp(.5rem, 1.5vw, 1.5rem);
+    transition: border .2s ease-in;
+}
+
+.users form .row .form-group input::-webkit-input-placeholder{
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   font-style: italic;
+}
+
+.users form .row .form-group input:focus{
+    border: 1px solid  rgb(57, 150, 243);
+}
+
+/* BUTTON GROUP*/
+
+.users form .row .button-group{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.users form .row .button-group .btn-cancel{
+   margin-left: 1.6rem;
+    background-color: grey;
+}
