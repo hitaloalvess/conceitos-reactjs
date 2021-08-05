@@ -16,7 +16,7 @@
   grid-template-areas: "header"
                        "content"
                        "footer";
-  
+                       width: 100%;
   min-height: 100vh;
 }
 
