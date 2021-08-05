@@ -18,7 +18,7 @@
     position: absolute;
     width: 0;
     height: 3px;
-    bottom: 20px;
+    bottom: 0px;
     background-color: royalblue;
     transition: all .3s ease-in-out;
 }

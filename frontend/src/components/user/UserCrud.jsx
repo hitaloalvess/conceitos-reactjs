@@ -106,13 +106,29 @@ const UserCrud = () => {
     const renderTable = () => {
         return (
             <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Ações</th>
-                </tr>
-                {renderRows()}           
+                <thead>
+                    <tr>
+                        <th className="t-medium"></th>
+                        <th className="t-small">ID</th>
+                        <th className="t-large">Nome</th>
+                        <th className="t-large">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {/* {renderRows()}            */}
+                    <tr>
+                        <td>BUTTONS</td>
+                        <td>1</td>
+                        <td>Hitalo Rodrigo Alves</td>
+                        <td>hitalo.ralves@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>BUTTONS</td>
+                        <td>1</td>
+                        <td>Hitalo Rodrigo Alves</td>
+                        <td>hitalo.ralves@hotmail.com</td>
+                    </tr>
+                </tbody>
             </table>
         )
     }

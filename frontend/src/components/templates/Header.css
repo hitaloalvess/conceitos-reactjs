@@ -1,17 +1,14 @@
-header.header{
+.header{
     width: 100%;
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    grid-template-areas: "logo menu";
+}
 
+.header .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
     background-color: var(--bg-dark);
     box-shadow: var(--shadow);
-}
-
-header .logo{
-    grid-area: logo;
-}
-
-header .menu{
-    grid-area: menu;
 }
