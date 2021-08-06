@@ -14,7 +14,8 @@
     position: absolute;
     width: 0;
     height: 3px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0px;
     background-color: royalblue;
     transition: all .3s ease-in-out;

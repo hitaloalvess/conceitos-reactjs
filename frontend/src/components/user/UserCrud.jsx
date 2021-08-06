@@ -18,6 +18,7 @@ const UserCrud = () => {
 
     useEffect(() => {
         const fetchUsers = async() => {
+            console.log('Dentro do useEffect')
             const resp = await axios(baseUrl)
             setUsers({
                 currentUser:{name:'', email:''},
@@ -28,7 +29,7 @@ const UserCrud = () => {
     },[])
 
     const clear = () => {
-        setUsers({ currentUser: {name: '', email: ''} })
+        setUsers({ currentUser: {name: '', email: ''}, list:users.list })
     }
 
     const getUpdateListUsers = (newUser) => {
@@ -38,7 +39,10 @@ const UserCrud = () => {
         return list;
     }
 
-    const save = async() => {
+    const save = async(e) => {
+        
+        e.preventDefault()
+
         const user = users.currentUser;
         const method = user.id ? 'put' : 'post';
         const url = user.id ? `${baseUrl}/${user.id}`: baseUrl;
@@ -46,23 +50,34 @@ const UserCrud = () => {
         const resp = await axios[method](url, user);
         const listUsers = getUpdateListUsers(resp.data);
 
-        this.setUsers({
+        setUsers({
             currentUser:{name:'', email: ''},
-            listUsers
+            list:listUsers
         });
 
+    }
+
+    const remove = async(userToDelete) => {
+        await  axios.delete(`${baseUrl}/${userToDelete.id}`);
+
+        const list = users.list.filter(user => user !== userToDelete);
+        setUsers({currentUser:users.currentUser, list});
+    }
+
+    const load = (user) => {
+        setUsers({currentUser:user, list:users.list})
     }
 
     const updateField = (e) => {
         const currentUser = {...users.currentUser};
         currentUser[e.target.name] = e.target.value;
 
-        setUsers({currentUser});
+        setUsers({currentUser, list:users.list});
     }
 
     const renderForm = () => {
         return (
-            <form action="#">
+            <form >
                 <div className="row">
                     <div className="form-group">
                         <label htmlFor="nome">Nome</label>
@@ -88,16 +103,17 @@ const UserCrud = () => {
         return users.list.map(user => {
             return (
                 <tr key={user.id}>
-                    <td>{user.name}</td>
-                    <td>{user.email}</td>
                     <td>
-                        <button className="btn-edit">
+                        <button className="button btn-edit" onClick={() => load(user)}>
                             <i className="fa fa-pencil"></i>
                         </button>
-                        <button className="btn-delete">
+                        <button className="button btn-delete" onClick={() => remove(user)}>
                             <i className="fa fa-trash"></i>
                         </button>
                     </td>
+                    <td>{user.id}</td>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
                 </tr>
             )
         })
@@ -115,19 +131,7 @@ const UserCrud = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {/* {renderRows()}            */}
-                    <tr>
-                        <td>BUTTONS</td>
-                        <td>1</td>
-                        <td>Hitalo Rodrigo Alves</td>
-                        <td>hitalo.ralves@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>BUTTONS</td>
-                        <td>1</td>
-                        <td>Hitalo Rodrigo Alves</td>
-                        <td>hitalo.ralves@hotmail.com</td>
-                    </tr>
+                    {renderRows()}           
                 </tbody>
             </table>
         )
@@ -136,7 +140,6 @@ const UserCrud = () => {
     return ( 
         <Main tipoContent="users">
             {renderForm()}
-            {/* <hr /> */}
             {renderTable()}
         </Main>
     );

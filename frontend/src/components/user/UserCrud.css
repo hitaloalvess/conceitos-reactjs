@@ -108,8 +108,33 @@ table .t-large{
 }
 
 table tbody{
-    width: 100%;
+    max-width: 100%;
      font-size: clamp(1rem, 1.5vw, 1.5rem);;
+}
+
+/*ACTIONS*/
+
+tbody tr td:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button.btn-edit,
+.button.btn-delete{
+    padding: .5rem 1rem;
+    margin: 0 0 .5rem 0 ;
+    margin-left: .25rem;
+}
+
+.button.btn-edit{
+    background-color: rgb(255, 215, 0);
+     color: #222;
+}
+
+.button.btn-delete{
+    background-color: rgb(243, 23, 23);
+    
 }
 
 
@@ -119,16 +144,17 @@ table tbody{
         grid-template-columns: 1fr;
     }
 
-    table tbody tr td:not(:first-child){
-        display: block;
-    }
-
-    table tbody tr td{
-        border: 0;
-        padding: .2rem 1.5rem;
+    table tbody tr td:not(:nth-child(1)){
+        padding: .2rem 1rem;
     }
 
     table thead{
         display: none;
+    }
+}
+
+@media (max-width:380px) {
+    table tbody tr td{
+       padding: .2rem .2rem;
     }
 }
