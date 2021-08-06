@@ -9,6 +9,7 @@
 }
 
 .app{
+  position: relative;
   display: grid;
   grid-template-rows: var(--header-height)
                       1fr
@@ -18,6 +19,7 @@
                        "footer";
                        width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 aside.logo{

@@ -18,13 +18,38 @@
     
     .header .container .menu-toggle{
         display: block;
+        z-index: 99;
     }
-
-    .header .container .menu{
-        display: none;
-    }
-
     
+    .header .container .menu{
+        position: absolute;
+        width: 0;
+        height: 100vh;
+        display: flex;
+        padding: 8rem 1rem;
+        top: 0;
+        right: 0;
+        background-color: #444;
+        z-index: -1;
+        opacity: 0;
+        transition: all .5s ease-in;
+    }
+
+    .header .container .menu ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header .container .menu ul li{
+        padding: 1.5rem 2rem;
+        margin: 0;
+    }
+
+    .header .container .menu.active{
+        width: 40vw;
+        opacity: 1;
+        z-index: 98;
+    }
 }
 
 @media (max-width:480px) {

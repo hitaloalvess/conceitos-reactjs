@@ -1,13 +1,10 @@
-/* .menu{
-    height: 100%; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    justify-self: center;
-     padding: 0 20%;
- } */
 
 .menu ul{
     /* height: 100%; */
     display: flex;
+    list-style: none;
+}
+
+.menu li + li{
+    margin-left: 5rem;
 }

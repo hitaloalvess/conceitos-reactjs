@@ -12,13 +12,12 @@ const NavItem = ({tipo}) => {
     }
 
     return ( 
-        <>
+        <li>
             <Link to={`/${tipo}`} className="menu-item">
                 {primeiraLetraMaiscula(tipo)}
-                <div className="sublinhar"></div>
             </Link>
            
-        </>
+        </li>
      );
 }
  

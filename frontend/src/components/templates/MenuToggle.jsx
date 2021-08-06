@@ -4,10 +4,13 @@ import './MenuToggle.css';
 
 const MenuToggle = () => {
 
-    const menuToggle = document.querySelector('.menu-toggle');
 
     const activateMenu = (e) => {
-       menuToggle.classList.toggle('active')
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.menu');
+
+       menuToggle.classList.toggle('active');
+       navMenu.classList.toggle('active');
     }
 
     return ( 
