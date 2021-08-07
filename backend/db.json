@@ -1,12 +1,24 @@
 {
-    "users":[{
-        "id":1,
-        "name":"Hitalo Rodrigo Alves",
-        "email":"hitalo.ralves@hotmail.com"
+  "users": [
+    {
+      "name": "Hitalo Rodrigo AlveS",
+      "email": "hitalo.ralves@outlook.com",
+      "id": 1
     },
     {
-        "id":2,
-        "name":"Gabriel Rodrigo Alves",
-        "email":"gabriel.ralves@hotmail.com"
-    }]
+      "name": "Luciana",
+      "email": "luciana@hotmail.com",
+      "id": 2
+    },
+    {
+      "name": "Leandro Rodrigo Alves",
+      "email": "leandro@hotmail.com",
+      "id": 3
+    },
+    {
+      "name": "Gabriel",
+      "email": "gabriel@hotmail.com",
+      "id": 4
+    }
+  ]
 }

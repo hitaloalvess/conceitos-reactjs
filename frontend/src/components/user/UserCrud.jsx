@@ -18,7 +18,7 @@ const UserCrud = () => {
 
     useEffect(() => {
         const fetchUsers = async() => {
-            console.log('Dentro do useEffect')
+
             const resp = await axios(baseUrl)
             setUsers({
                 currentUser:{name:'', email:''},
@@ -136,6 +136,7 @@ const UserCrud = () => {
             </table>
         )
     }
+    // AJEITAR O PADDING NO MOBILE 320PX - E REFATORAR USERCRUD
 
     return ( 
         <Main tipoContent="users">
