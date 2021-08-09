@@ -8,6 +8,12 @@
 
 ![Resultado final do projeto](.github/resultado-final-desktop-home.PNG)
 
+### Mobile
+<p align="center">
+  <img src=".github/resultado-final-mobile-home.PNG" width="200px">
+  <img src=".github/resultado-final-mobile-users.PNG" width="200px">
+  <img src=".github/resultado-final-menu-lateral.PNG" width="200px">
+</p>
 
 ## 💼 Tecnologias utilizadas
 Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
