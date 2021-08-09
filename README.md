@@ -12,9 +12,9 @@
 
 ## Mobile
 <p align="center">
-  <img src=".github/resultado-final-mobile-home.PNG" width="250px" alt="Imagem da tela home para dispositivo mobile">
-  <img src=".github/resultado-final-mobile-users.PNG" width="250px" alt="Imagem da tela de usuários para dispositivo mobile">
-  <img src=".github/resultado-final-menu-lateral.PNG" width="250px" alt="Imagem do menu adaptado para mobile">
+  <img src=".github/resultado-final-mobile-home.PNG" width="300px" alt="Imagem da tela home para dispositivo mobile">
+  <img src=".github/resultado-final-mobile-users.PNG" width="300px" alt="Imagem da tela de usuários para dispositivo mobile">
+  <img src=".github/resultado-final-menu-lateral.PNG" width="300px" alt="Imagem do menu adaptado para mobile">
 </p>
 
 ## Funcinalidades
