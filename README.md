@@ -17,6 +17,12 @@
   <img src=".github/resultado-final-menu-lateral.PNG" width="200px" alt="Imagem do menu adaptado para mobile">
 </p>
 
+## Funcinalidades
+
+- Inserir novo usuário
+- Deletar usuário
+- Editar usuário
+
 ## 💼 Tecnologias utilizadas
 Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 
