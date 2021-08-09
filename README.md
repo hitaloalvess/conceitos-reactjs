@@ -20,7 +20,7 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 - Json-server;
 
 ## Instalação e execução
-Primeiramente faça um clone desse repositório;
+Faça um clone desse repositório:
 ```git clone https://github.com/hitaloalvess/conceitos-reactjs.git```
     
 - Executando o Back-end:
