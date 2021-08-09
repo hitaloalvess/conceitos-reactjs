@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Projeto criado com o intuito de práticar conceitos e técnicas juntamente da tecnologia reactJS.
+  Projeto criado com o intuito de práticar conceitos e técnicas existentes dentro do ecossistema reactJS.
 </h4>
 
 ![Resultado final do projeto](.github/resultado-final-desktop.png)
@@ -33,3 +33,7 @@ Primeiramente faça um clone desse repositório;
 1.	Com o terminal aberto, execute o comando ```cd frontend```;
 2.	Execute ```npm install``` para realizar a instalação das dependencias;
 3.	Execute ```npm start``` para realizar a inicialização da aplicação;
+
+
+---
+Made with ♥ by Hitalo 🚀
