@@ -17,6 +17,7 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 - Javascript;
 - ReactJS;
 - Hooks;
+- React-Router-Dom;
 - Json-server;
 
 ## Instalação e execução
