@@ -78,6 +78,8 @@ const UserCrud = () => {
         setUsers({currentUser, list:users.list});
     }
 
+    // AJEITAR O PADDING NO MOBILE 320PX - E REFATORAR USERCRUD
+
     return ( 
         <Main tipoContent="users">
             <Form buttons={{updateField, save, clear}} users={users}/>
