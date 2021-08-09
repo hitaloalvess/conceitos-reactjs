@@ -21,11 +21,10 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 
 ## Instalação e execução
 Primeiramente faça um clone desse repositório;
-    git clone https://github.com/hitaloalvess/conceitos-reactjs.git
+- git clone https://github.com/hitaloalvess/conceitos-reactjs.git
     
 - Executando o Back-end:
 1.	Com o terminal aberto, execute o comando ```cd backend```;
-    Caso não esteja  conceitos-reactjs
 2.	Execute ```npm install``` para realizar a instalação das dependencias;
 3.	Execute ```npm start``` para realizar a inicialização da aplicação;
     
