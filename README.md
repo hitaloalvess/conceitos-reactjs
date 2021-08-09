@@ -6,13 +6,15 @@
   Projeto criado com o intuito de práticar conceitos e técnicas existentes dentro do ecossistema reactJS.
 </h4>
 
+## Web
 ![Resultado final do projeto](.github/resultado-final-desktop-home.PNG)
+![Resultado final do projeto - seção usuários](.github/resultado-final-desktop-users.PNG)
 
-### Mobile
+## Mobile
 <p align="center">
-  <img src=".github/resultado-final-mobile-home.PNG" width="200px">
-  <img src=".github/resultado-final-mobile-users.PNG" width="200px">
-  <img src=".github/resultado-final-menu-lateral.PNG" width="200px">
+  <img src=".github/resultado-final-mobile-home.PNG" width="200px" alt="Imagem da tela home para dispositivo mobile">
+  <img src=".github/resultado-final-mobile-users.PNG" width="200px" alt="Imagem da tela de usuários para dispositivo mobile">
+  <img src=".github/resultado-final-menu-lateral.PNG" width="200px" alt="Imagem do menu adaptado para mobile">
 </p>
 
 ## 💼 Tecnologias utilizadas
