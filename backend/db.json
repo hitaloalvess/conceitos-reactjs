@@ -1,11 +1,6 @@
 {
   "users": [
     {
-      "name": "Hitalo Rodrigo AlveS",
-      "email": "hitalo.ralves@outlook.com",
-      "id": 1
-    },
-    {
       "name": "Luciana",
       "email": "luciana@hotmail.com",
       "id": 2
@@ -19,6 +14,11 @@
       "name": "Gabriel",
       "email": "gabriel@hotmail.com",
       "id": 4
+    },
+    {
+      "name": "Hitalo Rodrigo Alves",
+      "email": "hitalo.ralves@outlook.com",
+      "id": 5
     }
   ]
 }
