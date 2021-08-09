@@ -6,7 +6,7 @@
   Projeto criado com o intuito de práticar conceitos e técnicas existentes dentro do ecossistema reactJS.
 </h4>
 
-![Resultado final do projeto](.github/resultado-final-desktop.png)
+![Resultado final do projeto](.github/resultado-final-desktop-home.PNG)
 
 
 ## 💼 Tecnologias utilizadas
