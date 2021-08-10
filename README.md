@@ -17,7 +17,10 @@
   <img src=".github/resultado-final-menu-lateral.PNG" width="300px" alt="Imagem do menu adaptado para mobile">
 </p>
 
-## Funcinalidades
+## Projeto
+O projeto consiste em um sistema de cadastro de usuários.
+
+## Funcionalidades
 
 - Inserir novo usuário
 - Deletar usuário
